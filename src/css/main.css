@@ -1,0 +1,160 @@
+* {
+  margin: auto;
+  padding: 1rem;
+  font-family: "Times New Roman";
+}
+html {
+  background-image: url("../img/portfolio-background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Times New Roman";
+}
+p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Times New Roman";
+  text-align: center;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+.bio {
+  display: flex;
+  font-family: "Times New Roman";
+  background-color: transparent 90%;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  box-shadow: 1px 1px 3px grey;
+  border-radius: 2%;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+footer {
+  color: antiquewhite;
+  font-weight: bold;
+  position: relative;
+}
+
+ul {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+a {
+  color: antiquewhite;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: whitesmoke;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.profilepic {
+  display: flex;
+  align-content: center;
+  width: 20%;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+/* yooooo */
+.bars {
+  color: antiquewhite;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  text-align: center;
+}
+.skills {
+  display: flex;
+  background-color: transparent 90%;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  box-shadow: 1px 1px 3px grey;
+  border-radius: 2%;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  /* Apply animation to this element */
+  -moz-animation: horizontally 15s linear infinite alternate;
+  -webkit-animation: horizontally 15s linear infinite alternate;
+  animation: horizontally 15s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}
+@-webkit-keyframes horizontally {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+@keyframes horizontally {
+  0% {
+    -moz-transform: translateX(50%); /* Browser bug fix */
+    -webkit-transform: translateX(50%); /* Browser bug fix */
+    transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%); /* Browser bug fix */
+    -webkit-transform: translateX(-50%); /* Browser bug fix */
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
